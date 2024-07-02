@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    min-height: 100vh; /* hacer que ocupe toda la pantalla  de arriba a abajo */
+    margin:0;
+    font-family: sans-serif;
+    font-size: 16px;
+    gap: 30px;
+}
+
+header{
+    width: 200px;
+    background-color: darkcyan;
+}
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+
+
+nav ul a{
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: darkcyan;
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+

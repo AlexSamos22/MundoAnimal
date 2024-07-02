@@ -1,0 +1,188 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Menu */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: darkcyan;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+/* Carrusel */
+
+.carrusel{
+    width: 35%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 15s infinite alternate linear;
+   
+}
+
+.carrusel li{
+    list-style: none;
+    width: 50%;
+}
+
+.carrusel img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+.resumen{
+    text-align: center;
+}
+
+.resumen h3{
+    color: #0a1a2a;
+    font-size: 35px;
+}
+
+.resumen p{
+   width: 50%;
+   margin: 0% auto;
+   padding-bottom:10px;
+
+}
+
+/* Footer */
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-height: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo1 .box img{
+    width: 250px;
+}
+
+.pie-pagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo1 .box a{
+    color: orange;
+}
+.pie-pagina .grupo1 .box a:hover{
+    color: red;
+}
+.pie-pagina .grupo1 .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #000d2033;
+    text-align:center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo1 .redes a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo2{
+    background-color:#0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.pie-pagina .grupo2 small{
+    font-size: 15px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
