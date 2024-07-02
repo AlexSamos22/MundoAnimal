@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  background-color: #008b8b;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 10px;
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav a {
+  padding-right: 10px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.galeriav {
+  text-align: center;
+  color: #000;
+  margin-top: 15px;
+  padding: 15px 10px;
+  font-size: 40px;
+}
+
+.contenedor {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.contenedor .video-principal {
+  background-color: #fff;
+  border-radius: 5px;
+  flex: 700px;
+  padding: 15px;
+  box-shadow: 0 5px 15px #0000001a;
+}
+
+.contenedor .video-principal .vprincipal {
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.contenedor .video-principal .titleprincipal {
+  color: #444;
+  font-size: 20px;
+}
+
+.contenedor .lista-videos {
+  background-color: #fff;
+  border-radius: 5px;
+  flex: 350px;
+  height: 485px;
+  padding: 15px;
+  overflow-y: scroll;
+  box-shadow: 0 5px 15px #0000001a;
+}
+
+.contenedor .lista-videos::-webkit-scrollbar {
+  width: 10px;
+}
+
+.contenedor .lista-videos::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.contenedor .lista-videos::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.contenedor .lista-videos .vid {
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.contenedor .lista-videos .vid:last-child {
+  margin-bottom: 0;
+}
+
+.contenedor .lista-videos .vid.active {
+  background-color: #444;
+}
+
+.contenedor .lista-videos .vid.active .title {
+  color: #fff;
+}
+
+.contenedor .lista-videos .vid video {
+  border-radius: 5px;
+  width: 100px;
+}
+
+.contenedor .lista-videos .vid .title {
+  color: #444;
+  font-size: 17px;
+}
+
+.pie-pagina {
+  background-color: #0a141d;
+  width: 100%;
+}
+
+.pie-pagina .grupo1 {
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-height: 1200px;
+  margin: auto;
+  padding: 45px 0;
+  display: grid;
+}
+
+.pie-pagina .grupo1 .box figure {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.pie-pagina .grupo1 .box img {
+  width: 250px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .box a {
+  color: orange;
+}
+
+.pie-pagina .grupo1 .box a:hover {
+  color: red;
+}
+
+.pie-pagina .grupo1 .redes a {
+  color: #fff;
+  text-align: center;
+  background-color: #000d2033;
+  width: 50px;
+  height: 45px;
+  margin-right: 10px;
+  line-height: 45px;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.pie-pagina .grupo1 .redes a:hover {
+  color: #0ff;
+}
+
+.pie-pagina .grupo2 {
+  text-align: center;
+  color: #fff;
+  background-color: #0a1a2a;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 10px;
+  display: flex;
+}
+
+.pie-pagina .grupo2 small {
+  font-size: 15px;
+}
+
+@media (max-widgt: 991px) {
+  .contenedor {
+    grid-template-columns: 1.5fr 1fr;
+    padding: 10%;
+  }
+}
+
+@media (max-widgt: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+
+  .pie-pagina .grupo1 {
+    grid-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    padding: 35px 0;
+  }
+}
+/*# sourceMappingURL=adiestramiento.37209a67.css.map */
